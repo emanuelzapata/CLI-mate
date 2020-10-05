@@ -26,7 +26,7 @@ echo 'export MAPBOX=API_KEY' >>  ~/.bash_profile
 
 echo 'export WEATHERSTACK=API_KEY' >> ~/.bash_profile
 ```
-
+joto
 ## Get API Keys
 ### [Weatherstack](https://weatherstack.com/) - 1k free requests per month
 
