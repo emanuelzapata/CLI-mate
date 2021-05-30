@@ -1,0 +1,56 @@
+using System;
+using System.Collections.Generic;
+using System.Management.Automation;
+using System.Management.Automation.Runspaces;
+using System.Text.Json;
+using System.Threading.Tasks;
+using System.Net.Http;
+
+namespace CLI_Mate
+{
+    [Cmdlet(VerbsCommon.Get,"WeatherData")]
+    //[OutputType(string)]
+    public class GetWeather: PSCmdlet
+    {
+        [Parameter(
+            Mandatory = true,
+            Position = 0,
+            ValueFromPipeline = true,
+            ValueFromPipelineByPropertyName = true
+        )]
+        public string Name {get;set;}
+        protected override void BeginProcessing()
+        {
+            WriteVerbose("Begin!");
+        }
+        //MAIN METHOD 
+        protected override void ProcessRecord()
+        {           
+            var client = new HttpClient();            
+            var task = Task.Run(() => client.GetAsync("https://jsonplaceholder.typicode.com/posts")); 
+            task.Wait();
+            var response = task.Result;
+            Console.WriteLine(response.Content.ReadAsStringAsync().Result);
+            Console.WriteLine(Name);
+            //WriteObject(new Person{
+            //    Name = Name
+            //});
+            //WriteVerbose(this.Name);            
+            //WriteVerbose("Processing!");
+        }
+        protected override void EndProcessing()
+        {
+            WriteVerbose("End!");
+        }
+    }
+    public class Person{
+        public string Name {get;set;}
+    }
+    public class Posts
+    {
+        public int userId {get;set;}
+        public int id {get;set;}
+        public string title {get;set;}
+        public string body {get;set;}
+    }
+}

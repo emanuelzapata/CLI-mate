@@ -1,0 +1,9 @@
+E:\Projects\CLI-mate\CLI-Mate\obj\Debug\netstandard2.0\CLI-Mate.csprojAssemblyReference.cache
+E:\Projects\CLI-mate\CLI-Mate\obj\Debug\netstandard2.0\CLI-Mate.AssemblyInfoInputs.cache
+E:\Projects\CLI-mate\CLI-Mate\obj\Debug\netstandard2.0\CLI-Mate.AssemblyInfo.cs
+E:\Projects\CLI-mate\CLI-Mate\obj\Debug\netstandard2.0\CLI-Mate.csproj.CoreCompileInputs.cache
+E:\Projects\CLI-mate\CLI-Mate\bin\Debug\netstandard2.0\CLI_Mate.deps.json
+E:\Projects\CLI-mate\CLI-Mate\bin\Debug\netstandard2.0\CLI_Mate.dll
+E:\Projects\CLI-mate\CLI-Mate\bin\Debug\netstandard2.0\CLI_Mate.pdb
+E:\Projects\CLI-mate\CLI-Mate\obj\Debug\netstandard2.0\CLI_Mate.dll
+E:\Projects\CLI-mate\CLI-Mate\obj\Debug\netstandard2.0\CLI_Mate.pdb
