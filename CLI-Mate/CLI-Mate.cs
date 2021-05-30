@@ -6,6 +6,14 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using System.Net.Http;
 
+/*
+Instructions.
+- pwsh.exe -> this will run a new powershell 6 instance within the current one
+- exit out of this one to detach the imported module
+- dotnet build -> to build the DLL
+- Import-Module .\bin\Debug\<somemadmad>\CLI.dll
+- call using get-weatherdata <variable>
+*/
 namespace CLI_Mate
 {
     [Cmdlet(VerbsCommon.Get,"WeatherData")]
