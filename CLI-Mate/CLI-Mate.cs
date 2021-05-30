@@ -14,6 +14,7 @@ Instructions.
 - Import-Module .\bin\Debug\<somemadmad>\CLI.dll
 - call using get-weatherdata <variable>
 - link to calling rest apis -> https://stackoverflow.com/questions/53529061/whats-the-right-way-to-use-httpclient-synchronously/53529122
+- Placeholder data -> https://jsonplaceholder.typicode.com/posts
 */
 namespace CLI_Mate
 {
